@@ -47,14 +47,27 @@ var groceries = ["apples", "milk", "eggs", "bread"];
 //Code Here
 
 function doubleCheck(arr){
-  var result = arr.slice(0);
+  //var result = arr.slice(0);
+  // var hasChocolate = false;
 
-  for(var i = 0; i < arr.length; i++){
-    if(arr[i] !== 'chocolate'){
-      result.push('chocolate');
-    }
-  } 
-  return result;
+  // for(var i = 0; i < arr.length; i++){
+  //   if(arr[i] === 'chocolate'){
+  //     hasChocolate = true;
+  //   }
+  //   if(hasChocolate === true){
+  //     return arr;
+  //   }else {
+  //     arr.push('chocolate');
+  //     return arr;
+  //   }
+  // } 
+
+  if(arr.includes('chocolate')){
+    return arr;
+  }else {
+    arr.push('chocolate');
+    return arr;
+  }
 }
 
 //////////////////PROBLEM 5////////////////////
